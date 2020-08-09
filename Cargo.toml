@@ -3,6 +3,15 @@ name = "newton"
 version = "0.1.0"
 authors = ["Thomas Vigouroux <tomvig38@gmail.com>"]
 edition = "2018"
+license-file = "LICENSE"
+description = "Simple generic Newton method."
+homepage = "https://github.com/vigoux/newton"
+repository = "https://github.com/vigoux/newton"
+readme = "README.md"
+keywords = ["newton", "generic"]
+exclude = [
+	".github/*"
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
