@@ -6,7 +6,7 @@ A dead-simple, dependency-free Rust crate for generic Newton method.
 
 Everything is contained in the `Newton` iterator :
 
-```
+```rust
 use newton::Newton;
 
 fn main() {
