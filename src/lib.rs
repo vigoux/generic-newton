@@ -9,7 +9,7 @@ use std::ops::{Div, Sub};
 /// # Example
 ///
 /// ```
-/// use newton::Newton;
+/// use generic_newton::Newton;
 ///
 /// fn main() {
 ///     let mut n = Newton::<f64>::new(
@@ -18,7 +18,7 @@ use std::ops::{Div, Sub};
 ///         |x| -(x.sin() + 3. * x.powi(2)), // Its derivative
 ///     );
 ///
-///     assert!(n.nth(1000).unwrap() - 0.865474033102 < 1E-11)
+///     assert!((n.nth(1000).unwrap() - 0.865474033102).abs() < 1E-11)
 /// }
 /// ```
 pub struct Newton<T>
