@@ -77,5 +77,9 @@ mod tests {
 
         let mut n = Newton::new(0., |x| x - 1., |_| 1.);
         assert_eq!(n.nth(5).unwrap(), 1.);
+
+        let value = 1.0;
+        let mut n = Newton::new(0., |x| x - value, |_| 1.);
+        assert_eq!(n.nth(5).unwrap(), 1.);
     }
 }
