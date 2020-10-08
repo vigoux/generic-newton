@@ -9,7 +9,7 @@ use std::ops::{Div, Sub};
 /// # Example
 ///
 /// ```
-/// use newton::Newton;
+/// use generic_newton::Newton;
 ///
 /// fn main() {
 ///     let mut n = Newton::<f64>::new(
