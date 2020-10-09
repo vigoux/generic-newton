@@ -63,11 +63,9 @@ where
         let deriv = &self.derivative;
 
         let next = self.current - (func(self.current) / deriv(self.current));
-        let prev = self.current;
 
         self.current = next;
-
-        Some(prev)
+        Some(next)
     }
 }
 
